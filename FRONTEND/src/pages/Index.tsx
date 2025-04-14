@@ -256,6 +256,7 @@ const Index = () => {
         onSave={handleCreateEventFromTask}
         selectedTime={selectedTimeSlot || undefined}
         initialTitle={draggedTask?.title}
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         initialCategory={activeGoal && goals.find(g => g.id === draggedTask?.goalId)?.title.toLowerCase() as any}
       />
     </div>

@@ -1,7 +1,7 @@
 
 import { Event, Goal, Task } from './types';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://google-calendar-backend-v3fo.onrender.com/api';
 
 // Event API calls
 export const fetchEvents = async (): Promise<Event[]> => {
